@@ -6,6 +6,12 @@ let mainDiv=document.querySelector('.main-div');
   buttonS.addEventListener('click',() =>{
     
   let mName=movieName.value;
+ 
+  if(mName==="")
+  {
+      alert("You must write something");
+  }
+  else{
   const api=`https://www.omdbapi.com/?t=${mName}&apikey=bc345d51`;
   fetch(api)
     .then(response => response.json())
@@ -34,5 +40,5 @@ let mainDiv=document.querySelector('.main-div');
     })
     maine.style.opacity=1;
 
-   
+  }
   })
