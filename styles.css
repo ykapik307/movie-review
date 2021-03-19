@@ -82,14 +82,22 @@ background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
 
 @media screen and (max-width:600px) {
     .ll{
-        max-width: 225px;
+        max-width: 235px;
+        margin: 15px 5px 15px 15px;
+       
+        
     }
     .enter{
         width: 70px ;
+        margin-right:10px 5px 15px 15px;
+        transform: translateY(-1px);
+        
     }
     .container{
         font-size: 14px;
         height: 85vh;
+        max-width: 80%;
+        
     }
     
 }
